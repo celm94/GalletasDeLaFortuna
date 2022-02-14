@@ -29,24 +29,50 @@ public class Window extends javax.swing.JFrame {
 
         jButton1 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("ABRIR UNA GALLETA");
+        jButton1.setBackground(new java.awt.Color(204, 204, 255));
+        jButton1.setFont(new java.awt.Font("Lucida Calligraphy", 1, 12)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 102));
+        jButton1.setText("Abrir una Galleta");
+        jButton1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 102)));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 340, 230, 40));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 400, 230, 40));
 
         jLabel2.setBackground(new java.awt.Color(0, 102, 102));
+        jLabel2.setFont(new java.awt.Font("Vivaldi", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setAutoscrolls(true);
         jLabel2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(204, 0, 102)));
+        jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEADING);
         jLabel2.setOpaque(true);
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, 400, 140));
+
+        jLabel3.setFont(new java.awt.Font("Lucida Handwriting", 0, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 51, 51));
+        jLabel3.setText("Número de Galleta:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, 20));
+
+        jLabel4.setFont(new java.awt.Font("Lucida Handwriting", 3, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 51, 51));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 60, 20));
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Leelawadee UI Semilight", 1, 24)); // NOI18N
+        jLabel5.setText("GALLETAS DE LA FORTUNA");
+        jLabel5.setOpaque(true);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 80, 300, 50));
+        jLabel5.getAccessibleContext().setAccessibleName("GALLETAS DE LA FORTUNA");
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\ACER\\Desktop\\CM\\galletasfortuna.jpg")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-420, 0, 920, 630));
@@ -54,30 +80,34 @@ public class Window extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         String[] premios = new String[5];
-        premios[0] = "que en exactamente 10 años, tu pack se filtrará por accidente y se volverá viral," +
-                "lo que te traerá muchas oportunidades como poder tener tu propio reality show," +
-                "lo cual rechazarás porque siempre dign@, nunca indign@.";
-        premios[1] = "que el 30 de Junio tocarán a tu puerta para fumigar, así que te irás " +
-                "a la tienda de la esquina por una cocacola. " +
-                "De repente entrará tu crush a la tienda, ignorándote " +
-                "por completo y le preguntará al tendero si hay Nutella.";
-        premios[2]= "en el 2,040 tú y tu familia huirán de Guatemala debido a la debacle político y económico que ha provocado la dictadura" +
-                "de Neto Bran y para cubrir los gastos venderás tu cuerpo a una corporación para que realice experimentos." +
-                "Te transformarán en un cyborg, lo que extenderá tu tiempo de vida por 500 años más, de los cuales utilizarás los primeros" +
-                "20 prestando servicio militar para ayudar a establecer un nuevo orden mundial.";
-        premios[3]= "esta noche no dormirás porque necesitas estudiar para tu próximo parcial, pero pasarás la mitad de la noche" +
-                "viendo videos de bromas a gatos y stalkeando el instagram de tu crush.";
-        premios[4]= "ganaste un ¡CÓMODÍN! Felicidades, has ganado la oportunidad de elegir un fragmento de tu futuro. Escribe a continuación" +
-                "las cosas que quisieras que te sucedieran. Debes ser específico sobre en cuánto tiempo van a suceder. A disfrutar de la" +
-                "vida se ha dicho.";
-        int random = (int)(Math.random()*5);
-        jLabel2.setText(premios[random]);
+         String[] premios = new String[15];
+        premios[0] = "Te aguarda una larga y feliz vida";
+        premios[1] = "Hoy es el momento de explorar: no temas";
+        premios[2]= "Estás en el lugar perfecto para llegar desde aquí";
+        premios[3]= "Te estás volviendo mejor en lo que haces todos los días";
+        premios[4]= "A cada paso, una oportunidad aparece frente a ti";
+        premios[5]= "No te metas en el mundo de las drogas";
+        premios[6]= "Tienes que dormir más";
+        premios[7]= "Confía en el tiempo";
+        premios[8]= "Mañana puede ser muy tarde para disfrutar lo que tienes hoy";
+        premios[9]= "Se te cumplirá un hermoso sueño";
+        premios[10]= "Hoy es el momento de explorar: no temas";
+        premios[11]= "No todo el mundo puede recibir las mismas cosas";
+        premios[12]= "Disfruta del camino";
+        premios[13]= "Aprenderás a ser más positivo";
+        premios[14]= "El amor y la tos no se pueden ocultar";
+        int random = (int)(Math.random()*14);
+        jLabel2.setText("<html>"+premios[random]+"</html>");
+        jLabel4.setText(""+random);
+        jButton1.setText("Abrir Nueva Galleta");
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    
     /**
      * @param args the command line arguments
      */
@@ -117,5 +147,8 @@ public class Window extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
